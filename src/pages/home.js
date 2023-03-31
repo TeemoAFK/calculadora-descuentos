@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import "../assets/css/DiscountCalculator.css";
 import swal from "sweetalert";
+import icon from '../assets/images/rebaja.png';
 
 function App() {
   const [price, setPrice] = useState("");
@@ -33,6 +34,7 @@ function App() {
   return (
     <div className="App">
       <h1>Calculadora de Descuentos</h1>
+      <img src={icon} alt="rebajas" className="icono"/>
       <input
       className="input"
         type="number"
